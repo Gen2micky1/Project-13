@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Micheal Olowofela">
-    <meta name="description" content="This is a Profile Card Component">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Micheal Olowofela" />
+    <meta name="description" content="This is a Profile Card Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card Component</title>
-    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <article class="profile-card">
-        <section class="profile-card__top-hero">
-            <figure>
-                <img src="./images/bg-pattern-card.svg" alt="bg-pattern-top" width="350px" height="140px" loading="lazy">
+      <section class="profile-card__top-hero">
+        <figure class="profile-card__profile-image">
+          <img
+            src="./images/image-victor.jpg"
+            alt="image-victor"
+            width="96px"
+            height="96px"
+            loading="lazy"
+          />
 
-                <figcaption class="offscreen">bg-pattern-top</figcaption>
-            </figure>
+          <figcaption class="offscreen">image-victor</figcaption>
+        </figure>
+      </section>
+
+      <section class="main-content">
+        <section class="profile-card__text-content ">
+          <h1 class="profile-card__profile-name center">
+            Victor Crest<span>26</span>
+          </h1>
+          <p class="profile-card__profile-location center">London</p>
         </section>
 
-        <section class="main-content">
-            <section class="profile-card__profile-image">
-                <figure>
-                    <img src="./images/image-victor.jpg" alt="image-victor" width="96px" height="96px" loading="lazy">
+        <div class="line"></div>
 
-                    <figcaption class="offscreen">image-victor</figcaption>
-                </figure>
-            </section>
-            
-            <section class="profile-card__text-content center">
-                <h1 class="profile-card__profile-name">Victor Crest<span>26</span></h1>
-                <p class="profile-card__profile-location">London</p>
-            </section>
+        <section class="profile-card__profile-figures">
+          <div class="figure-content">
+            <div class="profile-card__profile-numbers center">80K</div>
+            <div class="profile-card__profile-label center">Followers</div>
+          </div>
 
-            <div class="line"></div>
+          <div class="figure-content">
+            <div class="profile-card__profile-numbers center">803K</div>
+            <div class="profile-card__profile-label center">Likes</div>
+          </div>
 
-            <section class="profile-card__profile-figures center">
-                <div class="follower center">
-                    <div class="profile-card__profile-numbers">80K</div>
-                    <div class="profile-card__profile-label">Followers</div>
-                </div>
-
-                <div class="likes center">
-                    <div class="profile-card__profile-numbers">803K</div>
-                    <div class="profile-card__profile-label">Likes</div>
-                </div>
-
-                <div class="photos center">
-                    <div class="profile-card__profile-numbers">1.4K</div>
-                    <div class="profile-card__profile-label">Photos</div>
-                </div>
-            </section>
+          <div class="figure-content">
+            <div class="profile-card__profile-numbers center">1.4K</div>
+            <div class="profile-card__profile-label center">Photos</div>
+          </div>
         </section>
+      </section>
     </article>
-    
-</body>
+  </body>
 </html>
