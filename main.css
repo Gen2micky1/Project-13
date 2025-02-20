@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BODY-BG: #19A1AE;
+  --CARD-BG: #FFFFFF;
+  --TITLE: #2E3349;
+  --LABEL: #6B7082;
+
+  /* SHADOW */
+  --CARD-SHADOW: 0rem 3.125rem 6.25rem -1.25rem hsla(197, 84%, 20%, 0.5048);
+
+  /* TYPOGRAPHY */
+  --FF: "Kumbh Sans", serif;
+
+  /* MOBILE TEXT STYLE */
+  --TITLE-BOLD-MOB: bold 1.125rem ;
+  --TITLE-LIGHT-MOB: normal 1.125rem ;
+  --SUBTITLE-MOB: normal .875rem ;
+  --LABEL-MOB: normal .625rem;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  place-content: center;
+  background-color: var(--BODY-BG);
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg) ;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -55.73%, 50% ;
+}
+
+/* CARD */
+.profile-card {
+    max-width: 326px;
+    min-height: 374px;
+}
