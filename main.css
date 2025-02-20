@@ -92,6 +92,7 @@ body {
     border-radius: .9375rem;
     overflow: hidden;
     box-shadow: var(--CARD-SHADOW);
+    margin: 9.1875rem auto 9.125rem auto;
 }
 
 /* TOP HERO */
